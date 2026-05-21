@@ -48,10 +48,9 @@
 <p align="center">
   <img src="https://trophy.ryglcloud.net/?username=jeseekabhandari-commits&theme=radical&no-frame=true&no-bg=true&margin-w=4&cache_seconds=86400" alt="Jeseeka Bhandari's GitHub Trophies" />
 </p>
-<div align="center">
-  <img src="profile-3d-city.svg" alt="3D City" width="100%" />
-</div>
-
+<p align="center">
+  <img src="./profile-3d-city.svg" alt="3D City View" width="800">
+</p>
 
 ## 🛠️ Languages & Tools
 
