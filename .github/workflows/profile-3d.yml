@@ -1,9 +1,9 @@
 name: GitHub Profile 3D Contribution
 
 on:
-  schedule: # Runs every 24 hours
+  schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: yoshi382/github-profile-3d-contrib@0.7.1
+      - uses: yoshi382/github-profile-3d-contrib@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -24,4 +24,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A .
           git commit -m "Generated 3D Profile City" || exit 0
-          git push
+          git push origin main
